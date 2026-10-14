@@ -1,6 +1,6 @@
 <% layout("/layouts/boilerplate") %> 
 
-<style>
+<!-- <style>
     #filters {
         display: flex;
         flex-wrap: wrap;
@@ -36,7 +36,114 @@
         display: flex;
         align-items: center;
     }
+</style> -->
+
+
+
+
+
+
+
+
+<style>
+    #filters {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        /* gap: 1.5rem; */
+        gap: 2.5rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0.75rem 0.5rem;
+        margin-top: 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+        text-align: center;
+        margin: 0;
+        opacity: 0.7;
+    }
+
+    .filter:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .filter p {
+        font-size: 0.85rem;
+        margin: 0.4rem 0 0;
+        white-space: nowrap;
+    }
+
+    .tax-info {
+        display: none;
+    }
+
+    .tax-toggle {
+        flex: 0 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        min-height: 3rem;
+        height: auto;
+        padding: 0.65rem 0.8rem;
+        /* margin-left: auto; */
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .tax-toggle .form-check {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tax-toggle .form-check-label {
+        font-size: 0.85rem;
+    }
+
+    @media (max-width: 767.98px) {
+        #filters {
+            gap: 1.25rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .filter p {
+            font-size: 0.75rem;
+        }
+
+        .tax-toggle {
+            margin-left: 0;
+            padding: 0.5rem 0.65rem;
+        }
+
+        .tax-toggle .form-check-label {
+            font-size: 0.75rem;
+        }
+    }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="filters">
         <div class="filter">
